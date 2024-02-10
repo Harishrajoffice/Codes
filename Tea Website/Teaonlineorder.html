@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+  margin: 0;
+  font-family: Copperplate, Papyrus, fantasy;
+  background-image: url('Teafranbg.png'); /* Replace 'your-image-url.jpg' with the actual path to your image */
+  background-size: cover; /* Ensures the background image covers the entire screen */
+  background-position: center; /* Centers the background image */
+  align-items: center;
+  justify-content: center;
+}
+
+    header {
+      background-color:goldenrod;
+      color: #1b1a1a;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      float: center;
+    }
+
+    .site-name {
+      display: inline-block;
+    }
+
+    .side-margin {
+      margin-left: 20px;
+    }
+
+    .filter-section {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    nav {
+      background: black;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: goldenrod;
+    }
+    .container {
+  background-color: #fcf9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto; /* Add this line to center the container horizontally */
+  margin-top: 50px; /* Adjust the top margin as needed */
+}
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    input {
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: goldenrod;
+      color: #0c0c0c;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #bb9b0e;
+    }
+
+    .message-box {
+      margin-top: 16px;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 40px; /* Adjust the size of the icons as needed */
+            margin: 0 10px;
+        }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="site-name">
+      <h1>TEA SHOP</h1>
+    </div>
+    <div class="side-margin">
+      <div class="filter-section">
+        <!-- Your filter content goes here -->
+        <nav>
+          <a href="TeaShop.html">Home</a>
+          <a href="Tmenu.html">Menu</a>
+          <a href="Tservice.html">Services</a>
+          <a href="Tabout.html">About</a>
+        </nav>
+      </div>
+    </div>
+    <h1>"Experience excellence on your plate - place your order with us today!"</h1>
+  </header>
+  <body>
+    <div class="container">
+        <h2>Make your order</h2>
+        <form id="registrationForm">
+          <label for="name"><b>Name:</b></label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="number"><b>Mobile Number:</b></label>
+          <input type="number" id="mobile number" name="number" required>
+
+          <label for="dateOfBirth"><b>Event Date:</b></label>
+          <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+    
+          <label for="query"><b>Event Venue:</b></label>
+          <textarea id="query" placeholder="Address" name="query" rows="4"></textarea>
+    
+          <label for="query"><b>Add a Note or Message:</b></label>
+          <textarea id="query" placeholder="Express you Intrest"name="query" rows="4"></textarea>
+    
+          <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    
+        <div class="message-box" id="messageBox"></div>
+      </div>
+    <footer>
+        <p>Follow us on social media:</p>
+        <div class="social-icons">
+            <img src="insta logo.png" alt="Instagram Logo">
+            <img src="facebook logo.png" alt="Facebook Logo">
+            <!-- Add more social icons as needed -->
+        </div>
+        <p>&copy; 2024 Tea Shop. All rights reserved.</p>
+    </footer>
+    </body>
+</html>

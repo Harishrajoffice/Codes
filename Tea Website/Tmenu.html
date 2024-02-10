@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Shop</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Copperplate, Papyrus, fantasy;
+            background-color: rgb(252, 250, 250);
+        }
+
+        header {
+            background-color: goldenrod;
+            color: #1b1a1a;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .site-name {
+            display: inline-block;
+        }
+
+        .side-margin {
+            margin-left: 20px;
+        }
+
+        .filter-section {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav {
+            background: black;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: goldenrod;
+        }
+
+        .row {
+            background-image: url('menuimg.png');
+            display: flex;
+            flex-wrap: wrap; /* Allow content to wrap to the next line */
+            justify-content: center; /* Center the content horizontally */
+            margin-bottom: 20px;
+            width: 100%; /* Full width */
+        }
+
+        .content-container {
+            text-align: center;
+            width: 30%;
+            margin: 0 10px; /* Add some margin between content containers */
+            margin-bottom: 20px; /* Add bottom margin to separate rows */
+        }
+
+        .section-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .points-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .points-list li {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* You can adjust this based on your layout */
+}
+
+.center-image {
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+}
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 40px; /* Adjust the size of the icons as needed */
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="site-name">
+            <h1>TEA SHOP</h1>
+        </div>
+        <div class="side-margin">
+            <div class="filter-section">
+                <!-- Your filter content goes here -->
+                <nav>
+                    <a href="TeaShop.html">Home</a>
+                    <a href="Tmenu.html">Menu</a>
+                    <a href="Tservice.html">Services</a>
+                    <a href="Tabout.html">About</a>
+                </nav>
+            </div>
+        </div>
+        <h1>Menu</h1>
+        <h2>"Tea is the gentle reminder that there is beauty in simplicity."</h2>
+    </header>
+    <div class="row">
+        <div class="content-container">
+            <div class="section-heading">TEA</div>
+            <ul class="points-list">
+                <li> Tea.</li>
+                <li> Ginger Tea.</li>
+                <li>Cardamom Tea.</li>
+                <li> Black Tea.</li>
+                <li>Green Tea.</li>
+                <li>Lemon Tea.</li>
+                <!-- Add more points as needed -->
+            </ul>
+        </div>
+
+        <div class="content-container">
+            <div class="section-heading">COFFEE</div>
+            <ul class="points-list">
+                <li>Filter Coffee</li>
+                <li>Cold Coffee</li>
+                <li>Arabic Coffee.</li>
+                <li>Kumbakonam Coffee.</li>
+                <li>Americano</li>
+                <!-- Add more points as needed -->
+            </ul>
+        </div>
+
+        <div class="content-container">
+            <div class="section-heading">MILK SHAKES</div>
+            <ul class="points-list">
+                <li>Pista Milkshake</li>
+                <li>Strawberry Milkshake</li>
+                <li>Banana Milkshake</li>
+                <li>Chocolate Milkshake</li>
+                <li>Mango Milkshake</li>
+                <!-- Add more points as needed -->
+            </ul>
+        </div>
+    </div>
+<br>
+    <div class="row">
+        <div class="content-container">
+            <div class="section-heading">MILK SPECIALITIES</div>
+            <ul class="points-list">
+                <li>Hot Chocolate</li>
+                <li>Badam Milk</li>
+                <li>Boost</li>
+                <li>Horlicks</li>
+                <li>Rose Milk</li>
+                <li> Lassi</li>
+                <!-- Add more points as needed -->
+            </ul>
+        </div>
+
+        <div class="content-container">
+            <div class="section-heading">ICE TEA</div>
+            <ul class="points-list">
+                <li>Lemon</li>
+                <li>Apple</li>
+                <li>Lychee</li>
+                <li>Pomegranate</li>
+            </ul>
+        </div>
+
+        <div class="content-container">
+            <div class="section-heading">COOKIES</div>
+            <ul class="points-list">
+                <li>Chocolate Chip Cookies</li>
+                <li>Shortbread Cookies:</li>
+                <li>Almond Biscotti:</li>
+                <li>Thumbprint Cookies</li>
+                <li>Snickerdoodle Cookies </li>
+                <li> Peanut Butter Cookies</li>
+                <!-- Add more points as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Follow us on social media:</p>
+        <div class="social-icons">
+            <img src="insta logo.png" alt="Instagram Logo">
+            <img src="facebook logo.png" alt="Facebook Logo">
+            <!-- Add more social icons as needed -->
+        </div>
+        <p>&copy; 2024 Tea Shop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

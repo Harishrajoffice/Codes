@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <style>
+     body {
+        margin: 0;
+       font-family: Copperplate, Papyrus, fantasy;
+       background-color: rgb(252, 250, 250);
+    }
+
+
+    header {
+      background-color:goldenrod;
+      color: #1b1a1a;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      float: center;
+    }
+
+    .site-name {
+      display: inline-block;
+    }
+
+    .side-margin {
+      margin-left: 20px;
+    }
+
+    .filter-section {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    nav {
+      background: black;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: goldenrod;
+    }
+
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-card:hover {
+            transform: scale(1.1);
+        }
+
+        .service-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .service-card h2 {
+            color: #333;
+        }
+
+        .service-card p {
+            color: #555;
+        }
+        .address-container {
+          background-image: url("Taddress.png"); /* Replace 'your-bg-image.jpg' with the actual path or URL of your background image */
+          background-size: cover;
+          background-position: center;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          border-radius: 8px;
+          text-align: center;
+          color: #080808; /* Set text color for better visibility on the background */
+        }
+        
+        #client-logos {
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: center;
+            animation: scrollClients 20s linear infinite; /* Adjust the animation duration as needed */
+        }
+
+        .client-logo {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .client-logo img {
+            max-width: 100px; /* Adjust the max-width as needed */
+            height: auto;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        @keyframes scrollClients {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        p {
+            font-size: 18px; /* Adjust the font size as needed */
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        .marquee-container {
+            width: 100%;
+            height: 50px; /* Adjust the height as needed */
+            overflow: hidden;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+
+        .marquee-content {
+            white-space: nowrap;
+            position: absolute;
+            animation: marqueeMove 15s linear infinite; /* Adjust the animation duration as needed */
+        }
+
+        .marquee-content span {
+            margin-right: 20px; /* Adjust the spacing between client names as needed */
+            font-size: 25px;
+        
+        }
+
+
+        @keyframes marqueeMove {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 40px; /* Adjust the size of the icons as needed */
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="site-name">
+          <h1>TEA SHOP</h1>
+        </div>
+        <div class="side-margin">
+          <div class="filter-section">
+            <!-- Your filter content goes here -->
+            <nav>
+                <a href="TeaShop.html">Home</a>
+              <a href="Tmenu.html">Menu</a>
+              <a href="Tservice.html">Services</a>
+              <a href="Tabout.html">About</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+    <header>
+        <h1>Our Services</h1>
+        <h2>"Tea is the key to serenity, unlocking moments of calm in every cup."</h2>
+    </header>
+
+    <section>
+        <div class="service-card">
+            <img src="TS1.png" alt="Certified Authenticity Image">
+            <h2>Tea Tasting Events</h2>
+            <p>Unleash your palate at our Tea Tasting Events, where you can immerse yourself in the rich world of flavors, aromas, and stories behind our premium tea selections.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="TS2.png" alt="Expert Refurbishment Image">
+            <h2>Custom Tea Blends</h2>
+            <p>Craft a tea experience uniquely yours with our Custom Tea Blends service - choose from a variety of high-quality leaves and ingredients to create a personalized blend that suits your taste perfectly.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="TS3.png" alt="Concierge Service Image">
+            <h2>Tea Explorer's Club</h2>
+            <p>Embark on a monthly tea odyssey with our exclusive subscription - a passport to extraordinary flavors delivered to your door, ensuring your tea journey is always exciting and ever-expanding.</p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <header>
+        <h1>Our Franchise Over Tamilnadu</h1>
+        <div id="profile-container">
+            <!-- Other header content goes here -->
+        </div>
+    </header>
+    <br><br>
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>Chennai</span>
+             <span>Coimbatore</span>
+          <span>Madurai</span>
+            <span>Ramanathapuram</span>
+            <span>Kodaikanal</span>
+            <span>Trichy</span>
+            <span>Erode </span>
+            <span>Selam </span>
+            <span>Ooty </span>
+            <!-- Add more client names as needed -->
+        </div>
+    </div>
+     <br><br><br>
+     <div class="address-container">
+        <h1><b>Head Office Address</b></h1>
+        <h2><b>123 Main Street</b></h2>
+        <h2><b>Adyar</b></h2>
+        <h2><b>Chennai, Tamilnadu 12345</b></h2>
+        <h2><b>Email: info@example.com</b></h2>
+        <h2><b>Phone: +91 9876543210</b></h2>
+    </div>
+    <br><br><br><br>
+     <footer>
+        <p>Follow us on social media:</p>
+        <div class="social-icons">
+            <img src="insta logo.png" alt="Instagram Logo">
+            <img src="facebook logo.png" alt="Facebook Logo">
+            <!-- Add more social icons as needed -->
+        </div>
+        <p>&copy; 2024 Tea Shop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
